@@ -35,7 +35,7 @@ def setup_seed(seed):
     np.random.seed(seed)
     os.environ['PYTHONHASHSEED'] = str(seed)  # 禁止hash随机化
     torch.manual_seed(seed)
-setup_seed(2022)
+setup_seed(2024)
 
 #%%
 
@@ -201,7 +201,8 @@ print('val_data_len: ', len(df_val))
 
 
 # PRE_TRAINED_MODEL_PATH = 'E:/打工/预训练模型/microsoft/deberta-v3-base'
-PRE_TRAINED_MODEL_PATH = 'microsoft/deberta-v3-base'
+# PRE_TRAINED_MODEL_PATH = 'microsoft/deberta-v3-base'
+PRE_TRAINED_MODEL_PATH = 'MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli'
 
 
 
